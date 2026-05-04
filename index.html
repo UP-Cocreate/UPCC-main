@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="UP Cocreate — AI automation, data analytics, branding, strategic communications, and digital marketing built with you.">
+  <title>UP Cocreate</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="header" id="header">
+    <div class="container nav-inner">
+      <a href="#" class="logo" aria-label="UP Cocreate home">
+        <span class="logo-up">UP</span><span class="logo-co"> Co</span><span class="logo-create">create</span>
+      </a>
+      <nav aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#process" class="nav-link">How we work</a></li>
+          <li><a href="#contact" class="btn btn-dark nav-cta">Let's talk</a></li>
+        </ul>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <ul>
+      <li><a href="#services" class="mobile-link">Services</a></li>
+      <li><a href="#about" class="mobile-link">About</a></li>
+      <li><a href="#process" class="mobile-link">How we work</a></li>
+      <li><a href="#contact" class="mobile-link">Let's talk</a></li>
+    </ul>
+  </div>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-content">
+          <p class="eyebrow">AI · Data · Brand · Strategy · Marketing</p>
+          <h1>We help organizations<br><em>grow with purpose.</em></h1>
+          <p class="hero-sub">UP Cocreate partners with teams to design, automate, and communicate what matters — built with you, not handed to you.</p>
+          <div class="hero-ctas">
+            <a href="#services" class="btn btn-teal">Explore services</a>
+            <a href="#contact" class="btn btn-outline">Start a conversation</a>
+          </div>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <div class="art-blob art-blob-teal"></div>
+          <div class="art-blob art-blob-purple"></div>
+          <div class="art-blob art-blob-peach"></div>
+          <div class="art-ring"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="section services" id="services">
+      <div class="container">
+        <div class="section-intro">
+          <p class="eyebrow">What we do</p>
+          <h2>Five ways we help you grow.</h2>
+        </div>
+        <div class="services-grid">
+
+          <article class="service-card">
+            <div class="service-icon icon-teal">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="3"/>
+                <path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/>
+              </svg>
+            </div>
+            <h3>AI Automation</h3>
+            <p>Automate the repetitive. Free your team to focus on what only humans can do. We design AI workflows that fit how you actually work.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon icon-purple">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 3v18h18"/>
+                <path d="M18 17V9"/><path d="M13 17V5"/><path d="M8 17v-3"/>
+              </svg>
+            </div>
+            <h3>Data Analytics</h3>
+            <p>Turn numbers into decisions. We build dashboards, surface insights, and help you create a data culture that actually sticks.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon icon-peach">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+              </svg>
+            </div>
+            <h3>Branding</h3>
+            <p>A brand that sounds like you and works like a strategy. We build identities and messaging that resonate and hold up over time.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon icon-purple">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+              </svg>
+            </div>
+            <h3>Strategic Communications</h3>
+            <p>Say the right thing, to the right people, at the right moment. We craft communication strategies for organizations navigating growth and change.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon icon-teal">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+              </svg>
+            </div>
+            <h3>Digital Marketing</h3>
+            <p>Reach the people who matter most. From content strategy and SEO to full campaigns, we grow your audience and turn them into loyal partners.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section about" id="about">
+      <div class="container about-grid">
+        <div class="about-content">
+          <p class="eyebrow">Our philosophy</p>
+          <h2>We don't work <em>for</em> you.<br>We work <em>with</em> you.</h2>
+          <p class="lead">Co-creation isn't a buzzword. It's the method. The best strategies are built together — with the people who know the mission and the people it serves.</p>
+          <p>We bring human-centered design thinking, multilingual reach, and decades of cross-sector experience to every engagement. From governments and UN agencies to nonprofits, startups, and global enterprises.</p>
+          <a href="#contact" class="btn btn-teal">Work with us</a>
+        </div>
+        <div class="about-stats">
+          <div class="stat">
+            <span class="stat-num">131</span>
+            <span class="stat-label">countries reached through our work</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">15+</span>
+            <span class="stat-label">years of cross-sector experience</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">50K+</span>
+            <span class="stat-label">people reached through platforms we built</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">5</span>
+            <span class="stat-label">languages spoken natively on our team</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section class="section process" id="process">
+      <div class="container">
+        <div class="section-intro centered">
+          <p class="eyebrow">How we work</p>
+          <h2>Simple. Collaborative. Effective.</h2>
+        </div>
+        <div class="process-grid">
+          <div class="process-step">
+            <span class="step-num">01</span>
+            <h3>Listen &amp; Discover</h3>
+            <p>We start by understanding your context, goals, and the people you serve. No assumptions — just good questions.</p>
+          </div>
+          <div class="process-step">
+            <span class="step-num">02</span>
+            <h3>Co-design</h3>
+            <p>We build strategy together. Your team's knowledge is the foundation of everything we create.</p>
+          </div>
+          <div class="process-step">
+            <span class="step-num">03</span>
+            <h3>Build &amp; Deliver</h3>
+            <p>We execute with precision — on time, on brief, and with full transparency every step of the way.</p>
+          </div>
+          <div class="process-step">
+            <span class="step-num">04</span>
+            <h3>Measure &amp; Grow</h3>
+            <p>We track what matters, share the data, and iterate until the work does what it's meant to do.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <!-- Replace placeholder quotes with real client testimonials when ready -->
+    <section class="section testimonials">
+      <div class="container">
+        <div class="section-intro centered">
+          <p class="eyebrow">What people say</p>
+          <h2>Results that speak for themselves.</h2>
+        </div>
+        <div class="testimonials-grid">
+          <blockquote class="testimonial">
+            <p>"Working with UP Cocreate changed how our team approaches data. They didn't just build dashboards — they changed our decision-making culture entirely."</p>
+            <footer>
+              <strong>Director of Operations</strong>
+              <span>International Development Organization</span>
+            </footer>
+          </blockquote>
+          <blockquote class="testimonial">
+            <p>"They brought clarity to a brand that had been struggling to articulate its value for years. The strategy they co-created with us actually stuck."</p>
+            <footer>
+              <strong>Chief Communications Officer</strong>
+              <span>Global Nonprofit</span>
+            </footer>
+          </blockquote>
+          <blockquote class="testimonial">
+            <p>"Our digital marketing results doubled within three months. More importantly, the campaigns felt authentic — like us, not like a template."</p>
+            <footer>
+              <strong>CEO &amp; Founder</strong>
+              <span>Social Enterprise</span>
+            </footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA / CONTACT -->
+    <section class="cta-section" id="contact">
+      <div class="container cta-inner">
+        <p class="eyebrow eyebrow-light">Ready to grow?</p>
+        <h2>Let's co-create something that works.</h2>
+        <p>Tell us about your organization and what you're trying to solve. We'll take it from there.</p>
+        <a href="mailto:hello@upcocreate.com" class="btn btn-white">Start a conversation</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a href="#" class="logo footer-logo" aria-label="UP Cocreate home">
+        <span class="logo-up">UP</span><span class="logo-co"> Co</span><span class="logo-create-footer">create</span>
+      </a>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#process">How we work</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <p class="footer-copy">© 2025 UP Cocreate. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
