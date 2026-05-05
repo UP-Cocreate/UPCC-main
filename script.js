@@ -1,41 +1,68 @@
 // Nav shadow on scroll
 const header = document.getElementById('header');
-window.addEventListener('scroll', () => {
-  header.classList.toggle('scrolled', window.scrollY > 10);
-}, { passive: true });
+if (header) {
+  window.addEventListener('scroll', () => {
+    header.classList.toggle('scrolled', window.scrollY > 10);
+  }, { passive: true });
+}
 
-// Mobile menu toggle
+// Mobile hamburger
 const hamburger = document.getElementById('hamburger');
 const mobileMenu = document.getElementById('mobileMenu');
-
-hamburger.addEventListener('click', () => {
-  const isOpen = mobileMenu.classList.toggle('open');
-  hamburger.classList.toggle('active');
-  hamburger.setAttribute('aria-expanded', isOpen);
-  mobileMenu.setAttribute('aria-hidden', !isOpen);
-});
-
-// Close mobile menu when a link is clicked
-document.querySelectorAll('.mobile-link').forEach(link => {
-  link.addEventListener('click', () => {
-    mobileMenu.classList.remove('open');
-    hamburger.classList.remove('active');
-    hamburger.setAttribute('aria-expanded', false);
-    mobileMenu.setAttribute('aria-hidden', true);
+if (hamburger && mobileMenu) {
+  hamburger.addEventListener('click', () => {
+    const open = mobileMenu.classList.toggle('open');
+    hamburger.classList.toggle('active');
+    hamburger.setAttribute('aria-expanded', open);
+    mobileMenu.setAttribute('aria-hidden', !open);
   });
+  mobileMenu.querySelectorAll('a').forEach(a => {
+    a.addEventListener('click', () => {
+      mobileMenu.classList.remove('open');
+      hamburger.classList.remove('active');
+      hamburger.setAttribute('aria-expanded', false);
+      mobileMenu.setAttribute('aria-hidden', true);
+    });
+  });
+}
+
+// Language toggle
+function setLang(lang) {
+  if (lang === 'es') {
+    document.body.classList.add('es');
+    document.documentElement.lang = 'es';
+  } else {
+    document.body.classList.remove('es');
+    document.documentElement.lang = 'en';
+  }
+  // Update all toggle button labels
+  document.querySelectorAll('#langToggle, #langToggleMobile').forEach(btn => {
+    btn.textContent = lang === 'es' ? 'EN' : 'ES';
+    btn.setAttribute('aria-label', lang === 'es' ? 'Switch to English' : 'Cambiar a español');
+  });
+  localStorage.setItem('upcc-lang', lang);
+}
+
+document.querySelectorAll('#langToggle, #langToggleMobile').forEach(btn => {
+  if (btn) {
+    btn.addEventListener('click', () => {
+      setLang(document.body.classList.contains('es') ? 'en' : 'es');
+    });
+  }
 });
 
-// Subtle fade-in on scroll
+// Restore saved language preference
+const savedLang = localStorage.getItem('upcc-lang');
+if (savedLang) setLang(savedLang);
+
+// Scroll fade-in
 const observer = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('visible');
-      observer.unobserve(entry.target);
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.classList.add('visible');
+      observer.unobserve(e.target);
     }
   });
-}, { threshold: 0.12 });
+}, { threshold: 0.1 });
 
-document.querySelectorAll('.service-card, .process-step, .testimonial, .stat').forEach(el => {
-  el.classList.add('fade-in');
-  observer.observe(el);
-});
+document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
