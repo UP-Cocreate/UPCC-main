@@ -696,7 +696,11 @@ body.es span[data-lang="en"] { display: none; }
 
 /* Dark hero */
 .hero {
-  background: var(--dark);
+  background-color: var(--dark);
+  background-image: url('assets/images/Hero-01.svg');
+  background-size: 100% auto;
+  background-position: top center;
+  background-repeat: no-repeat;
   padding: 5.5rem 0;
   position: relative;
   overflow: hidden;
@@ -724,7 +728,7 @@ body.es span[data-lang="en"] { display: none; }
 .hero-content h1 { color: var(--white); }
 .hero .btn-outline { color: var(--white); border-color: rgba(255,255,255,.7); }
 .hero .btn-outline:hover { border-color: var(--teal); color: var(--teal); }
-.hero-sub { color: rgba(255,255,255,.78); }
+.hero-sub { color: var(--white); }
 .hero-badge {
   background: rgba(0,168,150,.14);
   color: var(--teal);
@@ -738,16 +742,6 @@ body.es span[data-lang="en"] { display: none; }
 .hero-card-num { color: var(--teal); }
 .hero-card-label { color: rgba(255,255,255,.5); }
 .hero-card-divider { background: rgba(255,255,255,.08); }
-.hero-bg-image {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-  z-index: 0;
-}
 
 /* Sherpa section */
 .sherpa-section {
