@@ -697,7 +697,7 @@ body.es span[data-lang="en"] { display: none; }
 /* Dark hero */
 .hero {
   background-color: var(--dark);
-  background-image: url('assets/images/Hero-01.svg');
+  background-image: url('assets/images/hero-viewer.jpg');
   background-size: 100% auto;
   background-position: top center;
   background-repeat: no-repeat;
