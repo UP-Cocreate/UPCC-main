@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="UP Cocreate Terms of Service — the agreement governing your use of upcocreate.com and our professional services.">
+  <meta name="robots" content="noindex">
+  <title>Terms of Service — UP Cocreate</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon/up-cocreate-trans.svg">
+
+  <style>
+    .legal-hero {
+      background: var(--dark2);
+      padding: 5rem 0 3.5rem;
+    }
+    .legal-hero .eyebrow { color: var(--teal); }
+    .legal-hero h1 { color: var(--white); margin: 0.5rem 0 0.75rem; }
+    .legal-hero .meta {
+      font-size: 0.875rem;
+      color: rgba(255,255,255,.45);
+      font-family: var(--font-body);
+    }
+
+    .legal-body {
+      background: var(--white);
+      padding: 5rem 0 6rem;
+    }
+    .legal-layout {
+      display: grid;
+      grid-template-columns: 210px 1fr;
+      gap: 4rem;
+      align-items: start;
+    }
+    @media (max-width: 768px) {
+      .legal-layout { grid-template-columns: 1fr; gap: 2rem; }
+      .legal-toc    { display: none; }
+    }
+
+    .legal-toc {
+      position: sticky;
+      top: 90px;
+    }
+    .legal-toc-label {
+      font-family: var(--font-head);
+      font-size: 0.65rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 0.75rem;
+    }
+    .legal-toc ol { list-style: none; }
+    .legal-toc li { margin-bottom: 2px; }
+    .legal-toc a {
+      font-size: 0.8125rem;
+      color: var(--muted);
+      display: block;
+      padding: 4px 0 4px 10px;
+      border-left: 2px solid var(--border);
+      transition: color var(--ease), border-color var(--ease);
+      line-height: 1.4;
+    }
+    .legal-toc a:hover {
+      color: var(--teal);
+      border-left-color: var(--teal);
+    }
+
+    .legal-content { min-width: 0; }
+    .legal-lead {
+      background: var(--surface);
+      border-left: 3px solid var(--teal);
+      border-radius: 0 var(--radius) var(--radius) 0;
+      padding: 1.125rem 1.375rem;
+      margin-bottom: 2.5rem;
+    }
+    .legal-lead p {
+      margin: 0;
+      font-size: 0.9375rem;
+      color: var(--text);
+      max-width: none;
+    }
+
+    .ls { margin-bottom: 3rem; }
+    .ls h2 {
+      font-family: var(--font-head);
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--teal);
+      margin-bottom: 1rem;
+      padding-bottom: 0.625rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .ls h3 {
+      font-size: 0.9375rem;
+      font-weight: 700;
+      color: var(--dark);
+      margin: 1.25rem 0 0.5rem;
+      font-family: var(--font-head);
+    }
+    .ls p {
+      font-size: 0.9375rem;
+      color: var(--text);
+      margin-bottom: 0.75rem;
+      max-width: none;
+      line-height: 1.7;
+    }
+    .ls ul, .ls ol {
+      padding-left: 1.25rem;
+      margin-bottom: 0.75rem;
+    }
+    .ls li {
+      font-size: 0.9375rem;
+      color: var(--text);
+      margin-bottom: 0.4rem;
+      line-height: 1.65;
+    }
+    .ls a { color: var(--teal); text-decoration: underline; }
+    .ls a:hover { color: var(--teal-dark); }
+    .ls strong { color: var(--dark); }
+
+    .caps-box {
+      background: var(--surface2);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 1rem 1.25rem;
+      margin: 0.75rem 0;
+    }
+    .caps-box p {
+      font-size: 0.8125rem;
+      font-weight: 600;
+      color: var(--dark);
+      text-transform: uppercase;
+      letter-spacing: 0.02em;
+      margin: 0;
+      line-height: 1.6;
+    }
+
+    .lang-note {
+      background: var(--teal-light);
+      border-radius: var(--radius-lg);
+      padding: 1rem 1.25rem;
+      margin-bottom: 2rem;
+      font-size: 0.875rem;
+      color: var(--teal-dark);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <div class="container nav-wrap">
+      <a href="index.html" class="logo" aria-label="UP Cocreate home">
+        <span class="logo-up">UP</span><span class="logo-co"> Co</span><span class="logo-create">create</span>
+      </a>
+      <nav aria-label="Main navigation">
+        <ul class="nav">
+          <li><a href="index.html#services" class="nav-link"><span data-lang="en">Services</span><span data-lang="es">Servicios</span></a></li>
+          <li><a href="about.html" class="nav-link"><span data-lang="en">About</span><span data-lang="es">Nosotros</span></a></li>
+          <li><a href="contact.html" class="nav-link"><span data-lang="en">Contact</span><span data-lang="es">Contacto</span></a></li>
+        </ul>
+      </nav>
+      <div class="nav-right">
+        <button class="lang-toggle desktop" id="langToggle" aria-label="Toggle language">ES</button>
+        <a href="contact.html" class="btn btn-teal btn-sm"><span data-lang="en">Let's talk</span><span data-lang="es">Hablemos</span></a>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <ul>
+      <li><a href="index.html#services"><span data-lang="en">Services</span><span data-lang="es">Servicios</span></a></li>
+      <li><a href="about.html"><span data-lang="en">About</span><span data-lang="es">Nosotros</span></a></li>
+      <li><a href="contact.html"><span data-lang="en">Contact</span><span data-lang="es">Contacto</span></a></li>
+    </ul>
+    <div class="mobile-lang-row">
+      <button class="lang-toggle" id="langToggleMobile" aria-label="Toggle language">ES</button>
+    </div>
+  </div>
+
+  <main>
+
+    <!-- HERO -->
+    <div class="legal-hero">
+      <div class="container">
+        <a href="index.html" class="back-link">
+          <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M10 12L6 8l4-4"/></svg>
+          <span data-lang="en">Back to home</span><span data-lang="es">Volver al inicio</span>
+        </a>
+        <p class="eyebrow"><span data-lang="en">Legal</span><span data-lang="es">Legal</span></p>
+        <h1><span data-lang="en">Terms of Service</span><span data-lang="es">Términos de Servicio</span></h1>
+        <p class="meta"><span data-lang="en">Effective date: June 14, 2026 · Last updated: June 14, 2026</span><span data-lang="es">Fecha de vigencia: 14 de junio de 2026 · Última actualización: 14 de junio de 2026</span></p>
+      </div>
+    </div>
+
+    <!-- BODY -->
+    <div class="legal-body">
+      <div class="container">
+
+        <div class="lang-note">
+          <strong>Language note:</strong> These Terms are provided in English and govern all use of this website and our services. A Spanish summary is available on request at <a href="mailto:hello@upcocreate.com">hello@upcocreate.com</a>. In any conflict, the English version prevails.
+        </div>
+
+        <div class="legal-layout">
+
+          <!-- TOC -->
+          <aside class="legal-toc" aria-label="Table of contents">
+            <p class="legal-toc-label">Contents</p>
+            <ol>
+              <li><a href="#acceptance">1. Acceptance</a></li>
+              <li><a href="#eligibility">2. Eligibility</a></li>
+              <li><a href="#website-use">3. Website Use</a></li>
+              <li><a href="#professional-services">4. Professional Services</a></li>
+              <li><a href="#acceptable-use">5. Acceptable Use</a></li>
+              <li><a href="#ip">6. Intellectual Property</a></li>
+              <li><a href="#confidentiality">7. Confidentiality</a></li>
+              <li><a href="#privacy">8. Privacy</a></li>
+              <li><a href="#disclaimers">9. Disclaimers</a></li>
+              <li><a href="#liability">10. Limitation of Liability</a></li>
+              <li><a href="#indemnification">11. Indemnification</a></li>
+              <li><a href="#termination">12. Termination</a></li>
+              <li><a href="#disputes">13. Dispute Resolution</a></li>
+              <li><a href="#governing-law">14. Governing Law</a></li>
+              <li><a href="#general">15. General Provisions</a></li>
+              <li><a href="#contact">16. Contact</a></li>
+            </ol>
+          </aside>
+
+          <!-- CONTENT -->
+          <div class="legal-content">
+
+            <div class="legal-lead">
+              <p>Please read these Terms of Service ("Terms") carefully before using the UP Cocreate website at <strong>upcocreate.com</strong> or engaging our professional services (collectively, the "Services") provided by <strong>UP Cocreate</strong> ("UP Cocreate," "we," "us," or "our"). By accessing the website or engaging our services, you agree to be bound by these Terms. If you do not agree, please do not use the website or engage our services.</p>
+            </div>
+
+            <!-- 1 -->
+            <section class="ls" id="acceptance">
+              <h2>1. Acceptance of Terms</h2>
+              <p>These Terms constitute a legally binding agreement between you (or the organization you represent) and UP Cocreate. By using the website, submitting a contact form, or engaging UP Cocreate for professional services, you confirm that you have read, understood, and agreed to these Terms and our <a href="privacy.html">Privacy Policy</a>, incorporated herein by reference.</p>
+              <p>For professional services engagements, these Terms are supplemented by a separate Statement of Work (SOW) or engagement letter signed between UP Cocreate and your organization. In the event of a conflict between these Terms and a signed SOW, the SOW prevails with respect to the specific engagement.</p>
+              <p>We may modify these Terms at any time by updating the "Last updated" date. Continued use of the website after changes are posted constitutes acceptance of the revised Terms.</p>
+            </section>
+
+            <!-- 2 -->
+            <section class="ls" id="eligibility">
+              <h2>2. Eligibility</h2>
+              <p>The website and services are intended for organizations and professionals, not individual consumers or minors. By using the website, you represent that:</p>
+              <ul>
+                <li>You are at least 18 years old;</li>
+                <li>If acting on behalf of an organization, you have authority to bind that organization to these Terms;</li>
+                <li>You are not barred from using the Services under applicable law; and</li>
+                <li>All information you provide is accurate and current.</li>
+              </ul>
+            </section>
+
+            <!-- 3 -->
+            <section class="ls" id="website-use">
+              <h2>3. Website Use</h2>
+              <p>We grant you a limited, non-exclusive, non-transferable license to access and use the website for the purpose of learning about UP Cocreate and our services, and to submit legitimate inquiries. This license does not include the right to:</p>
+              <ul>
+                <li>Reproduce, distribute, or create derivative works from any website content;</li>
+                <li>Scrape, index, or harvest data from the website without written consent;</li>
+                <li>Attempt to probe, test, or exploit any vulnerability in the website or its systems; or</li>
+                <li>Frame or mirror any part of the website without express written permission.</li>
+              </ul>
+            </section>
+
+            <!-- 4 -->
+            <section class="ls" id="professional-services">
+              <h2>4. Professional Services Engagements</h2>
+              <p>When you engage UP Cocreate for professional services, the following additional terms apply unless otherwise specified in a signed SOW:</p>
+
+              <h3>4.1 Scope of Work</h3>
+              <p>The specific services, deliverables, timelines, and fees for each engagement will be set out in a mutually agreed Statement of Work. Work outside the agreed scope requires a written amendment.</p>
+
+              <h3>4.2 Fees and Payment</h3>
+              <ul>
+                <li>Fees are as specified in the applicable SOW or engagement letter.</li>
+                <li>Invoices are due within 30 days of issuance unless otherwise agreed in writing.</li>
+                <li>Late payments accrue interest at 1.5% per month (or the maximum rate permitted by applicable law, whichever is lower) from the due date.</li>
+                <li>UP Cocreate reserves the right to suspend services for overdue accounts after reasonable notice.</li>
+              </ul>
+
+              <h3>4.3 Client Responsibilities</h3>
+              <p>Client agrees to:</p>
+              <ul>
+                <li>Provide timely access to information, personnel, systems, and materials reasonably required to deliver the services;</li>
+                <li>Designate a primary point of contact with authority to make decisions; and</li>
+                <li>Review and provide feedback on deliverables within the timeframes agreed in the SOW.</li>
+              </ul>
+              <p>UP Cocreate is not liable for delays caused by the client's failure to fulfill these responsibilities.</p>
+
+              <h3>4.4 Independent Contractor</h3>
+              <p>UP Cocreate operates as an independent contractor. Nothing in these Terms or any SOW creates an employment, partnership, joint venture, or agency relationship between UP Cocreate and client.</p>
+
+              <h3>4.5 Subcontractors</h3>
+              <p>UP Cocreate may engage qualified subcontractors to perform portions of the services, subject to confidentiality obligations equivalent to those in these Terms. UP Cocreate remains responsible for the work of its subcontractors.</p>
+            </section>
+
+            <!-- 5 -->
+            <section class="ls" id="acceptable-use">
+              <h2>5. Acceptable Use</h2>
+              <p>You agree not to use the website or services to:</p>
+              <ul>
+                <li>Violate any applicable law, regulation, or third-party rights;</li>
+                <li>Transmit content that is unlawful, defamatory, harassing, fraudulent, or harmful;</li>
+                <li>Impersonate any person or entity;</li>
+                <li>Introduce malware, viruses, or other harmful code;</li>
+                <li>Interfere with the operation of the website or its infrastructure; or</li>
+                <li>Engage in any conduct that could damage the reputation or operations of UP Cocreate.</li>
+              </ul>
+            </section>
+
+            <!-- 6 -->
+            <section class="ls" id="ip">
+              <h2>6. Intellectual Property</h2>
+
+              <h3>6.1 UP Cocreate IP</h3>
+              <p>All content on the website — including text, graphics, logos, images, and methodologies — is owned by or licensed to UP Cocreate and protected by applicable intellectual property law. Nothing in these Terms transfers ownership of UP Cocreate's pre-existing IP to you.</p>
+
+              <h3>6.2 Deliverables</h3>
+              <p>Unless otherwise specified in a signed SOW:</p>
+              <ul>
+                <li><strong>Custom deliverables</strong> created specifically for a client engagement transfer to the client upon full payment of all fees due.</li>
+                <li><strong>Background IP</strong> (methodologies, tools, frameworks, and know-how that UP Cocreate develops independently or brings to the engagement) remains owned by UP Cocreate. UP Cocreate grants the client a non-exclusive license to use background IP incorporated into deliverables solely for the client's internal business purposes.</li>
+              </ul>
+
+              <h3>6.3 Client Materials</h3>
+              <p>The client retains ownership of all materials provided to UP Cocreate for the engagement. The client grants UP Cocreate a limited license to use those materials solely to perform the agreed services.</p>
+
+              <h3>6.4 Portfolio &amp; Case Studies</h3>
+              <p>Unless the client objects in writing, UP Cocreate may reference the client's name and describe the nature of work in its portfolio and marketing materials. Detailed case studies require separate written approval.</p>
+            </section>
+
+            <!-- 7 -->
+            <section class="ls" id="confidentiality">
+              <h2>7. Confidentiality</h2>
+              <p>Each party ("Receiving Party") agrees to:</p>
+              <ul>
+                <li>Keep confidential all non-public information disclosed by the other party ("Disclosing Party") in connection with the engagement;</li>
+                <li>Use confidential information solely for the purpose of the engagement; and</li>
+                <li>Disclose confidential information only to employees or subcontractors who have a need to know and are bound by equivalent confidentiality obligations.</li>
+              </ul>
+              <p>These obligations do not apply to information that: (a) is or becomes publicly available through no breach of this agreement; (b) was known to the Receiving Party before disclosure; (c) is independently developed by the Receiving Party; or (d) is required to be disclosed by law or court order, provided reasonable advance notice is given to the Disclosing Party where possible.</p>
+              <p>Confidentiality obligations survive for 3 years after the conclusion of the applicable engagement, or longer as required by applicable law.</p>
+            </section>
+
+            <!-- 8 -->
+            <section class="ls" id="privacy">
+              <h2>8. Privacy</h2>
+              <p>Our collection and use of personal data is governed by our <a href="privacy.html">Privacy Policy</a>, incorporated herein by reference. If a professional services engagement involves UP Cocreate processing personal data on behalf of the client, the parties will enter into an appropriate data processing agreement (DPA) as required by applicable law (including GDPR Art. 28).</p>
+            </section>
+
+            <!-- 9 -->
+            <section class="ls" id="disclaimers">
+              <h2>9. Disclaimers</h2>
+              <div class="caps-box">
+                <p>THE WEBSITE IS PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR NON-INFRINGEMENT.</p>
+              </div>
+              <p>With respect to professional services, UP Cocreate warrants that it will perform services in a professional and workmanlike manner consistent with industry standards. UP Cocreate does not warrant:</p>
+              <ul>
+                <li>That services will achieve any specific business outcome, revenue target, or performance metric;</li>
+                <li>That AI-generated recommendations will be error-free or suitable for regulatory or legal purposes without independent review; or</li>
+                <li>That marketing, branding, or communications deliverables will achieve specific commercial results.</li>
+              </ul>
+              <p>Nothing in our services constitutes legal, financial, medical, or other regulated professional advice. Clients should seek qualified licensed professionals for such advice.</p>
+            </section>
+
+            <!-- 10 -->
+            <section class="ls" id="liability">
+              <h2>10. Limitation of Liability</h2>
+              <div class="caps-box">
+                <p>TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, UP COCREATE SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, INCLUDING LOSS OF PROFITS, REVENUE, DATA, GOODWILL, OR BUSINESS OPPORTUNITY, ARISING OUT OF OR RELATED TO THESE TERMS OR THE SERVICES, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.</p>
+              </div>
+              <p>UP COCREATE'S TOTAL AGGREGATE LIABILITY ARISING OUT OF OR RELATED TO THESE TERMS OR ANY ENGAGEMENT SHALL NOT EXCEED THE TOTAL FEES PAID BY THE CLIENT TO UP COCREATE IN THE THREE (3) MONTHS PRECEDING THE CLAIM.</p>
+              <p>Some jurisdictions do not allow certain liability exclusions or limitations. In such jurisdictions, our liability is limited to the maximum extent permitted by applicable law.</p>
+            </section>
+
+            <!-- 11 -->
+            <section class="ls" id="indemnification">
+              <h2>11. Indemnification</h2>
+              <p>You agree to defend, indemnify, and hold harmless UP Cocreate and its officers, directors, employees, and contractors from any claims, damages, losses, or expenses (including reasonable attorneys' fees) arising from:</p>
+              <ul>
+                <li>Your breach of these Terms;</li>
+                <li>Your violation of any applicable law or third-party rights;</li>
+                <li>Materials or information you provide to UP Cocreate for use in the engagement; or</li>
+                <li>Your use or misuse of deliverables beyond the scope permitted under these Terms.</li>
+              </ul>
+            </section>
+
+            <!-- 12 -->
+            <section class="ls" id="termination">
+              <h2>12. Termination</h2>
+              <p>Either party may terminate a professional services engagement:</p>
+              <ul>
+                <li><strong>For convenience:</strong> Upon 30 days' written notice to the other party (unless otherwise specified in the SOW).</li>
+                <li><strong>For cause:</strong> Immediately upon written notice if the other party materially breaches these Terms or the applicable SOW and fails to cure the breach within 15 days of written notice.</li>
+              </ul>
+              <p>Upon termination, the client will pay for all work completed and reasonable expenses incurred up to the termination date. Sections that by their nature survive termination (including Sections 6, 7, 9, 10, 11, 13, and 14) shall survive.</p>
+            </section>
+
+            <!-- 13 -->
+            <section class="ls" id="disputes">
+              <h2>13. Dispute Resolution</h2>
+
+              <h3>Informal Resolution</h3>
+              <p>Before initiating formal proceedings, the parties agree to attempt to resolve any dispute through good-faith negotiation for at least 30 days after written notice of the dispute.</p>
+
+              <h3>Arbitration</h3>
+              <p>If informal resolution fails, any dispute arising out of or relating to these Terms or any engagement (except for claims for injunctive relief or amounts below $10,000, which may be brought in small claims court) shall be resolved by binding arbitration administered by the American Arbitration Association (AAA) under its Commercial Arbitration Rules. The arbitration shall be conducted in English, in Arlington, Virginia (or via video conference), and the arbitrator's decision shall be final and binding.</p>
+
+              <h3>Class Action Waiver</h3>
+              <p>Each party agrees that claims shall be brought only in an individual capacity, and not as a plaintiff or class member in any class, collective, or representative proceeding.</p>
+
+              <h3>EEA / UK Users</h3>
+              <p>If you are located in the European Economic Area or United Kingdom, the arbitration clause and class action waiver do not apply to you. You retain the right to bring claims before the courts of your country of residence.</p>
+            </section>
+
+            <!-- 14 -->
+            <section class="ls" id="governing-law">
+              <h2>14. Governing Law</h2>
+              <p>These Terms are governed by the laws of the Commonwealth of Virginia, United States, without regard to its conflict of law provisions. For EEA and UK users, mandatory consumer protection provisions of your country of residence are not affected.</p>
+            </section>
+
+            <!-- 15 -->
+            <section class="ls" id="general">
+              <h2>15. General Provisions</h2>
+              <ul>
+                <li><strong>Entire Agreement:</strong> These Terms, together with any applicable SOW and the Privacy Policy, constitute the entire agreement between the parties regarding the subject matter hereof.</li>
+                <li><strong>Severability:</strong> If any provision is held invalid, the remaining provisions continue in effect.</li>
+                <li><strong>Waiver:</strong> Failure to enforce any right is not a waiver of that right.</li>
+                <li><strong>Assignment:</strong> You may not assign these Terms without our prior written consent. We may assign without restriction.</li>
+                <li><strong>Force Majeure:</strong> Neither party is liable for failures caused by events beyond reasonable control, including natural disasters, cyberattacks, government actions, or internet outages.</li>
+                <li><strong>Notices:</strong> Legal notices to UP Cocreate must be sent to <a href="mailto:hello@upcocreate.com">hello@upcocreate.com</a>. Notices to you will be sent to the email provided during engagement onboarding.</li>
+                <li><strong>Language:</strong> These Terms are in English. Any translation is for convenience only; the English version controls.</li>
+              </ul>
+            </section>
+
+            <!-- 16 -->
+            <section class="ls" id="contact">
+              <h2>16. Contact Us</h2>
+              <p>Questions about these Terms should be directed to:</p>
+              <p>
+                <strong>UP Cocreate — Legal</strong><br>
+                1550 Wilson Blvd, Suite 700 PMP 513<br>
+                Arlington, VA 22209 · USA<br>
+                <a href="mailto:hello@upcocreate.com">hello@upcocreate.com</a><br>
+                Phone: <a href="tel:+19293564450">929-356-4450</a>
+              </p>
+            </section>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="logo footer-logo" aria-label="UP Cocreate home">
+            <span class="logo-up">UP</span><span class="logo-co"> Co</span><span class="logo-create">create</span>
+          </a>
+          <p><span data-lang="en">Strategy, design, and growth — built together.</span><span data-lang="es">Estrategia, diseño y crecimiento — construidos juntos.</span></p>
+          <p class="footer-address">Arlington, VA USA</p>
+        </div>
+        <div class="footer-col">
+          <h4><span data-lang="en">Services</span><span data-lang="es">Servicios</span></h4>
+          <ul>
+            <li><a href="services/ai-automation.html"><span data-lang="en">AI Automation</span><span data-lang="es">Automatización con IA</span></a></li>
+            <li><a href="services/data-analytics.html"><span data-lang="en">Data Analytics</span><span data-lang="es">Analítica de Datos</span></a></li>
+            <li><a href="services/branding.html"><span data-lang="en">Branding</span><span data-lang="es">Marca y Branding</span></a></li>
+            <li><a href="services/strategic-communications.html"><span data-lang="en">Strategic Communications</span><span data-lang="es">Comunicaciones Estratégicas</span></a></li>
+            <li><a href="services/digital-marketing.html"><span data-lang="en">Digital Marketing</span><span data-lang="es">Marketing Digital</span></a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4><span data-lang="en">Company</span><span data-lang="es">Empresa</span></h4>
+          <ul>
+            <li><a href="about.html"><span data-lang="en">About</span><span data-lang="es">Nosotros</span></a></li>
+            <li><a href="about.html#founders"><span data-lang="en">Founders</span><span data-lang="es">Fundadores</span></a></li>
+            <li><a href="contact.html"><span data-lang="en">Contact</span><span data-lang="es">Contacto</span></a></li>
+            <li><a href="privacy.html"><span data-lang="en">Privacy Policy</span><span data-lang="es">Privacidad</span></a></li>
+            <li><a href="terms.html"><span data-lang="en">Terms of Service</span><span data-lang="es">Términos</span></a></li>
+            <li><a href="cookies.html"><span data-lang="en">Cookie Policy</span><span data-lang="es">Cookies</span></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025–2026 UP Cocreate. <span data-lang="en">All rights reserved.</span><span data-lang="es">Todos los derechos reservados.</span></p>
+        <p><a href="mailto:hello@upcocreate.com">hello@upcocreate.com</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

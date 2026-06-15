@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="UP Cocreate Cookie Policy — how we use cookies and tracking technologies on upcocreate.com.">
+  <meta name="robots" content="noindex">
+  <title>Cookie Policy — UP Cocreate</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon/up-cocreate-trans.svg">
+
+  <style>
+    .legal-hero {
+      background: var(--dark2);
+      padding: 5rem 0 3.5rem;
+    }
+    .legal-hero .eyebrow { color: var(--teal); }
+    .legal-hero h1 { color: var(--white); margin: 0.5rem 0 0.75rem; }
+    .legal-hero .meta {
+      font-size: 0.875rem;
+      color: rgba(255,255,255,.45);
+      font-family: var(--font-body);
+    }
+
+    .legal-body {
+      background: var(--white);
+      padding: 5rem 0 6rem;
+    }
+    .legal-layout {
+      display: grid;
+      grid-template-columns: 210px 1fr;
+      gap: 4rem;
+      align-items: start;
+    }
+    @media (max-width: 768px) {
+      .legal-layout { grid-template-columns: 1fr; gap: 2rem; }
+      .legal-toc    { display: none; }
+    }
+
+    .legal-toc {
+      position: sticky;
+      top: 90px;
+    }
+    .legal-toc-label {
+      font-family: var(--font-head);
+      font-size: 0.65rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 0.75rem;
+    }
+    .legal-toc ol { list-style: none; }
+    .legal-toc li { margin-bottom: 2px; }
+    .legal-toc a {
+      font-size: 0.8125rem;
+      color: var(--muted);
+      display: block;
+      padding: 4px 0 4px 10px;
+      border-left: 2px solid var(--border);
+      transition: color var(--ease), border-color var(--ease);
+      line-height: 1.4;
+    }
+    .legal-toc a:hover {
+      color: var(--teal);
+      border-left-color: var(--teal);
+    }
+
+    .legal-content { min-width: 0; }
+    .legal-lead {
+      background: var(--surface);
+      border-left: 3px solid var(--teal);
+      border-radius: 0 var(--radius) var(--radius) 0;
+      padding: 1.125rem 1.375rem;
+      margin-bottom: 2.5rem;
+    }
+    .legal-lead p {
+      margin: 0;
+      font-size: 0.9375rem;
+      color: var(--text);
+      max-width: none;
+    }
+
+    .ls { margin-bottom: 3rem; }
+    .ls h2 {
+      font-family: var(--font-head);
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--teal);
+      margin-bottom: 1rem;
+      padding-bottom: 0.625rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .ls h3 {
+      font-size: 0.9375rem;
+      font-weight: 700;
+      color: var(--dark);
+      margin: 1.25rem 0 0.5rem;
+      font-family: var(--font-head);
+    }
+    .ls p {
+      font-size: 0.9375rem;
+      color: var(--text);
+      margin-bottom: 0.75rem;
+      max-width: none;
+      line-height: 1.7;
+    }
+    .ls ul, .ls ol {
+      padding-left: 1.25rem;
+      margin-bottom: 0.75rem;
+    }
+    .ls li {
+      font-size: 0.9375rem;
+      color: var(--text);
+      margin-bottom: 0.4rem;
+      line-height: 1.65;
+    }
+    .ls a { color: var(--teal); text-decoration: underline; }
+    .ls a:hover { color: var(--teal-dark); }
+    .ls strong { color: var(--dark); }
+
+    /* Cookie table */
+    .cookie-table-wrap {
+      overflow-x: auto;
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--border);
+      margin: 1rem 0;
+    }
+    .cookie-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.875rem;
+    }
+    .cookie-table thead { background: var(--surface2); }
+    .cookie-table th {
+      text-align: left;
+      padding: 0.625rem 0.875rem;
+      font-family: var(--font-head);
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--muted);
+      border-bottom: 1px solid var(--border);
+      white-space: nowrap;
+    }
+    .cookie-table td {
+      padding: 0.625rem 0.875rem;
+      color: var(--text);
+      border-bottom: 1px solid var(--border);
+      vertical-align: top;
+      line-height: 1.5;
+    }
+    .cookie-table tr:last-child td { border-bottom: none; }
+    .cookie-table tbody tr:hover { background: var(--surface); }
+
+    .badge {
+      display: inline-block;
+      font-size: 0.7rem;
+      font-weight: 700;
+      padding: 2px 8px;
+      border-radius: 9999px;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      white-space: nowrap;
+      font-family: var(--font-head);
+    }
+    .badge-necessary { background: var(--teal-light); color: var(--teal-dark); }
+    .badge-analytics { background: var(--purple-light); color: var(--purple-dark); }
+    .badge-marketing { background: var(--gold-light); color: var(--gold-dark); }
+
+    .browser-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 0.75rem;
+      margin-top: 0.875rem;
+    }
+    .browser-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 0.875rem 1rem;
+    }
+    .browser-card strong {
+      display: block;
+      font-family: var(--font-head);
+      font-size: 0.875rem;
+      color: var(--dark);
+      margin-bottom: 0.25rem;
+    }
+    .browser-card a { font-size: 0.8125rem; }
+
+    .lang-note {
+      background: var(--teal-light);
+      border-radius: var(--radius-lg);
+      padding: 1rem 1.25rem;
+      margin-bottom: 2rem;
+      font-size: 0.875rem;
+      color: var(--teal-dark);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <div class="container nav-wrap">
+      <a href="index.html" class="logo" aria-label="UP Cocreate home">
+        <span class="logo-up">UP</span><span class="logo-co"> Co</span><span class="logo-create">create</span>
+      </a>
+      <nav aria-label="Main navigation">
+        <ul class="nav">
+          <li><a href="index.html#services" class="nav-link"><span data-lang="en">Services</span><span data-lang="es">Servicios</span></a></li>
+          <li><a href="about.html" class="nav-link"><span data-lang="en">About</span><span data-lang="es">Nosotros</span></a></li>
+          <li><a href="contact.html" class="nav-link"><span data-lang="en">Contact</span><span data-lang="es">Contacto</span></a></li>
+        </ul>
+      </nav>
+      <div class="nav-right">
+        <button class="lang-toggle desktop" id="langToggle" aria-label="Toggle language">ES</button>
+        <a href="contact.html" class="btn btn-teal btn-sm"><span data-lang="en">Let's talk</span><span data-lang="es">Hablemos</span></a>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <ul>
+      <li><a href="index.html#services"><span data-lang="en">Services</span><span data-lang="es">Servicios</span></a></li>
+      <li><a href="about.html"><span data-lang="en">About</span><span data-lang="es">Nosotros</span></a></li>
+      <li><a href="contact.html"><span data-lang="en">Contact</span><span data-lang="es">Contacto</span></a></li>
+    </ul>
+    <div class="mobile-lang-row">
+      <button class="lang-toggle" id="langToggleMobile" aria-label="Toggle language">ES</button>
+    </div>
+  </div>
+
+  <main>
+
+    <!-- HERO -->
+    <div class="legal-hero">
+      <div class="container">
+        <a href="index.html" class="back-link">
+          <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M10 12L6 8l4-4"/></svg>
+          <span data-lang="en">Back to home</span><span data-lang="es">Volver al inicio</span>
+        </a>
+        <p class="eyebrow"><span data-lang="en">Legal</span><span data-lang="es">Legal</span></p>
+        <h1><span data-lang="en">Cookie Policy</span><span data-lang="es">Política de Cookies</span></h1>
+        <p class="meta"><span data-lang="en">Effective date: June 14, 2026 · Last updated: June 14, 2026</span><span data-lang="es">Fecha de vigencia: 14 de junio de 2026 · Última actualización: 14 de junio de 2026</span></p>
+      </div>
+    </div>
+
+    <!-- BODY -->
+    <div class="legal-body">
+      <div class="container">
+
+        <div class="lang-note">
+          <strong>Language note:</strong> This Cookie Policy is provided in English. A Spanish summary is available on request at <a href="mailto:hello@upcocreate.com">hello@upcocreate.com</a>. In any conflict, the English version prevails.
+        </div>
+
+        <div class="legal-layout">
+
+          <!-- TOC -->
+          <aside class="legal-toc" aria-label="Table of contents">
+            <p class="legal-toc-label">Contents</p>
+            <ol>
+              <li><a href="#what-are-cookies">1. What Are Cookies?</a></li>
+              <li><a href="#why-we-use">2. Why We Use Cookies</a></li>
+              <li><a href="#types">3. Types We Use</a></li>
+              <li><a href="#cookie-list">4. Cookies We Set</a></li>
+              <li><a href="#third-party">5. Third-Party Services</a></li>
+              <li><a href="#consent">6. Your Consent</a></li>
+              <li><a href="#manage">7. Managing Cookies</a></li>
+              <li><a href="#do-not-track">8. Do Not Track</a></li>
+              <li><a href="#changes">9. Changes</a></li>
+              <li><a href="#contact">10. Contact Us</a></li>
+            </ol>
+          </aside>
+
+          <!-- CONTENT -->
+          <div class="legal-content">
+
+            <div class="legal-lead">
+              <p>This Cookie Policy explains how <strong>UP Cocreate</strong> ("we," "us," or "our") uses cookies and similar tracking technologies on <strong>upcocreate.com</strong>. It supplements our <a href="privacy.html">Privacy Policy</a> and <a href="terms.html">Terms of Service</a>.</p>
+            </div>
+
+            <!-- 1 -->
+            <section class="ls" id="what-are-cookies">
+              <h2>1. What Are Cookies?</h2>
+              <p>Cookies are small text files placed on your device (computer, phone, or tablet) when you visit a website. They allow the site to remember information about your visit — like your preferences or actions — to improve your experience.</p>
+              <p>Similar technologies used alongside cookies include:</p>
+              <ul>
+                <li><strong>Web beacons / pixel tags:</strong> Tiny transparent images that signal to a server when a page or email has been opened.</li>
+                <li><strong>Local storage:</strong> Browser-side storage that persists between sessions without using traditional cookies.</li>
+                <li><strong>Session storage:</strong> Temporary storage that is cleared when the browser tab closes.</li>
+              </ul>
+              <p>We refer to all of these collectively as "cookies" throughout this policy.</p>
+            </section>
+
+            <!-- 2 -->
+            <section class="ls" id="why-we-use">
+              <h2>2. Why We Use Cookies</h2>
+              <ul>
+                <li>To make the website function correctly;</li>
+                <li>To understand how visitors find and navigate our site so we can improve it;</li>
+                <li>To connect contact form submissions to visitor records in our CRM; and</li>
+                <li>To track the effectiveness of our marketing and outreach activities.</li>
+              </ul>
+            </section>
+
+            <!-- 3 -->
+            <section class="ls" id="types">
+              <h2>3. Types of Cookies We Use</h2>
+
+              <h3>Strictly Necessary</h3>
+              <p>Required for the website to function. They do not collect personal information for marketing purposes and cannot be switched off. No consent is required for these cookies.</p>
+
+              <h3>Analytics</h3>
+              <p>These cookies collect aggregate, anonymized information about how visitors use our site — page views, session duration, and traffic sources. We use this to improve the site. Consent is required in jurisdictions that mandate it.</p>
+
+              <h3>Marketing &amp; CRM Tracking</h3>
+              <p>Set primarily by GoHighLevel (GHL), our CRM platform, to connect form submissions to a visitor's browsing session and attribute inquiries to their source. This helps us follow up effectively. Consent is required in jurisdictions that mandate it.</p>
+            </section>
+
+            <!-- 4 -->
+            <section class="ls" id="cookie-list">
+              <h2>4. Cookies We Set</h2>
+              <p>The table below describes the cookies that may be active on upcocreate.com. This list may change as we update our services.</p>
+
+              <div class="cookie-table-wrap">
+                <table class="cookie-table" aria-label="Cookie details">
+                  <thead>
+                    <tr>
+                      <th>Cookie / Technology</th>
+                      <th>Provider</th>
+                      <th>Category</th>
+                      <th>Purpose</th>
+                      <th>Duration</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><code>__ghl_*</code> (GHL tracking)</td>
+                      <td>GoHighLevel</td>
+                      <td><span class="badge badge-marketing">Marketing</span></td>
+                      <td>Tracks visitor sessions and connects form submissions to contact records in the GHL CRM. Attributes leads to their source channel.</td>
+                      <td>Up to 12 months</td>
+                    </tr>
+                    <tr>
+                      <td>GHL session cookie</td>
+                      <td>GoHighLevel</td>
+                      <td><span class="badge badge-necessary">Necessary</span></td>
+                      <td>Maintains session state for form submission functionality.</td>
+                      <td>Session</td>
+                    </tr>
+                    <tr>
+                      <td>Analytics cookies (if enabled)</td>
+                      <td>UP Cocreate / third-party analytics</td>
+                      <td><span class="badge badge-analytics">Analytics</span></td>
+                      <td>Aggregate traffic and engagement data to understand site usage.</td>
+                      <td>Up to 24 months</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <p style="font-size:0.8125rem; color: var(--muted); margin-top:0.5rem;">We do not currently set advertising retargeting cookies. We may update this table as we add new tools or services.</p>
+            </section>
+
+            <!-- 5 -->
+            <section class="ls" id="third-party">
+              <h2>5. Third-Party Services</h2>
+
+              <h3>GoHighLevel (GHL)</h3>
+              <p>We use GoHighLevel as our CRM and contact management platform. When you visit our site or submit a contact form, GHL may set tracking cookies to identify your session, link your form submission to your prior web visits, and store your contact details in our CRM. GHL processes this data as our service provider under its <a href="https://www.gohighlevel.com/privacy-policy" target="_blank" rel="noopener noreferrer">Privacy Policy</a>.</p>
+              <p>To limit GHL tracking, you can clear cookies in your browser or use the opt-out mechanisms in Section 7.</p>
+
+              <h3>Google Fonts</h3>
+              <p>Our site loads the Plus Jakarta Sans and Inter typefaces from Google Fonts via CSS requests. This sends your IP address to Google's servers but does not set cookies on our site. Google may log the request under its <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Privacy Policy</a>.</p>
+
+              <h3>Hosting &amp; CDN</h3>
+              <p>Our hosting provider may collect technical log data (IP address, browser type, referring page) for security and performance purposes.</p>
+            </section>
+
+            <!-- 6 -->
+            <section class="ls" id="consent">
+              <h2>6. Your Consent</h2>
+              <p>Where required by applicable law — including the EU ePrivacy Directive, GDPR, and UK PECR — we will request your consent before setting non-essential cookies.</p>
+              <p>Strictly necessary cookies do not require consent. For analytics and marketing cookies, we rely on your consent. You may withdraw consent at any time by adjusting your browser settings (see Section 7). Withdrawal does not affect the lawfulness of any processing that occurred before you withdrew consent.</p>
+              <p>In jurisdictions where implied consent is legally sufficient, your continued use of the website after being informed of our cookie practices constitutes consent.</p>
+            </section>
+
+            <!-- 7 -->
+            <section class="ls" id="manage">
+              <h2>7. Managing &amp; Disabling Cookies</h2>
+
+              <h3>Browser Settings</h3>
+              <p>Most browsers let you view, block, and delete cookies. Find instructions for your browser:</p>
+
+              <div class="browser-grid">
+                <div class="browser-card">
+                  <strong>Google Chrome</strong>
+                  <a href="https://support.google.com/chrome/answer/95647" target="_blank" rel="noopener noreferrer">Manage cookies in Chrome →</a>
+                </div>
+                <div class="browser-card">
+                  <strong>Mozilla Firefox</strong>
+                  <a href="https://support.mozilla.org/en-US/kb/cookies-information-websites-store-on-your-computer" target="_blank" rel="noopener noreferrer">Manage cookies in Firefox →</a>
+                </div>
+                <div class="browser-card">
+                  <strong>Apple Safari</strong>
+                  <a href="https://support.apple.com/guide/safari/manage-cookies-sfri11471/mac" target="_blank" rel="noopener noreferrer">Manage cookies in Safari →</a>
+                </div>
+                <div class="browser-card">
+                  <strong>Microsoft Edge</strong>
+                  <a href="https://support.microsoft.com/en-us/microsoft-edge/delete-cookies-in-microsoft-edge-63947406-40ac-c3b8-57b9-2a946a29ae09" target="_blank" rel="noopener noreferrer">Manage cookies in Edge →</a>
+                </div>
+              </div>
+
+              <p style="margin-top:1rem;">Disabling cookies may affect form submission functionality and other features of the site.</p>
+
+              <h3>Industry Opt-Out Tools</h3>
+              <ul>
+                <li><strong>Network Advertising Initiative (US):</strong> <a href="https://optout.networkadvertising.org/" target="_blank" rel="noopener noreferrer">optout.networkadvertising.org</a></li>
+                <li><strong>Digital Advertising Alliance (US):</strong> <a href="https://optout.aboutads.info/" target="_blank" rel="noopener noreferrer">optout.aboutads.info</a></li>
+                <li><strong>European Interactive Digital Advertising Alliance:</strong> <a href="https://www.youronlinechoices.eu/" target="_blank" rel="noopener noreferrer">youronlinechoices.eu</a></li>
+              </ul>
+            </section>
+
+            <!-- 8 -->
+            <section class="ls" id="do-not-track">
+              <h2>8. Do Not Track</h2>
+              <p>Some browsers send a "Do Not Track" (DNT) signal to websites requesting that they not track you. There is currently no universally accepted standard for responding to DNT signals, and our website does not currently alter its behavior in response to a DNT signal. We will revisit this as standards evolve.</p>
+            </section>
+
+            <!-- 9 -->
+            <section class="ls" id="changes">
+              <h2>9. Changes to This Policy</h2>
+              <p>We may update this Cookie Policy when we change the technologies we use, when legal requirements change, or when we update our services. We will update the "Last updated" date and, for significant changes, notify you through the website or by email where we have your contact details.</p>
+            </section>
+
+            <!-- 10 -->
+            <section class="ls" id="contact">
+              <h2>10. Contact Us</h2>
+              <p>Questions about cookies or this policy:</p>
+              <p>
+                <strong>UP Cocreate</strong><br>
+                1550 Wilson Blvd, Suite 700 PMP 513<br>
+                Arlington, VA 22209 · USA<br>
+                <a href="mailto:hello@upcocreate.com">hello@upcocreate.com</a>
+              </p>
+              <p>For broader privacy questions, see our <a href="privacy.html">Privacy Policy</a>.</p>
+            </section>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="logo footer-logo" aria-label="UP Cocreate home">
+            <span class="logo-up">UP</span><span class="logo-co"> Co</span><span class="logo-create">create</span>
+          </a>
+          <p><span data-lang="en">Strategy, design, and growth — built together.</span><span data-lang="es">Estrategia, diseño y crecimiento — construidos juntos.</span></p>
+          <p class="footer-address">Arlington, VA USA</p>
+        </div>
+        <div class="footer-col">
+          <h4><span data-lang="en">Services</span><span data-lang="es">Servicios</span></h4>
+          <ul>
+            <li><a href="services/ai-automation.html"><span data-lang="en">AI Automation</span><span data-lang="es">Automatización con IA</span></a></li>
+            <li><a href="services/data-analytics.html"><span data-lang="en">Data Analytics</span><span data-lang="es">Analítica de Datos</span></a></li>
+            <li><a href="services/branding.html"><span data-lang="en">Branding</span><span data-lang="es">Marca y Branding</span></a></li>
+            <li><a href="services/strategic-communications.html"><span data-lang="en">Strategic Communications</span><span data-lang="es">Comunicaciones Estratégicas</span></a></li>
+            <li><a href="services/digital-marketing.html"><span data-lang="en">Digital Marketing</span><span data-lang="es">Marketing Digital</span></a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4><span data-lang="en">Company</span><span data-lang="es">Empresa</span></h4>
+          <ul>
+            <li><a href="about.html"><span data-lang="en">About</span><span data-lang="es">Nosotros</span></a></li>
+            <li><a href="about.html#founders"><span data-lang="en">Founders</span><span data-lang="es">Fundadores</span></a></li>
+            <li><a href="contact.html"><span data-lang="en">Contact</span><span data-lang="es">Contacto</span></a></li>
+            <li><a href="privacy.html"><span data-lang="en">Privacy Policy</span><span data-lang="es">Privacidad</span></a></li>
+            <li><a href="terms.html"><span data-lang="en">Terms of Service</span><span data-lang="es">Términos</span></a></li>
+            <li><a href="cookies.html"><span data-lang="en">Cookie Policy</span><span data-lang="es">Cookies</span></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025–2026 UP Cocreate. <span data-lang="en">All rights reserved.</span><span data-lang="es">Todos los derechos reservados.</span></p>
+        <p><a href="mailto:hello@upcocreate.com">hello@upcocreate.com</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

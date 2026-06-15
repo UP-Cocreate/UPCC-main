@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="UP Cocreate Privacy Policy — how we collect, use, and protect your personal information.">
+  <meta name="robots" content="noindex">
+  <title>Privacy Policy — UP Cocreate</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon/up-cocreate-trans.svg">
+
+  <style>
+    /* Legal page layout */
+    .legal-hero {
+      background: var(--dark2);
+      padding: 5rem 0 3.5rem;
+    }
+    .legal-hero .eyebrow { color: var(--teal); }
+    .legal-hero h1 { color: var(--white); margin: 0.5rem 0 0.75rem; }
+    .legal-hero .meta {
+      font-size: 0.875rem;
+      color: rgba(255,255,255,.45);
+      font-family: var(--font-body);
+    }
+
+    .legal-body {
+      background: var(--white);
+      padding: 5rem 0 6rem;
+    }
+    .legal-layout {
+      display: grid;
+      grid-template-columns: 210px 1fr;
+      gap: 4rem;
+      align-items: start;
+    }
+    @media (max-width: 768px) {
+      .legal-layout { grid-template-columns: 1fr; gap: 2rem; }
+      .legal-toc    { display: none; }
+    }
+
+    .legal-toc {
+      position: sticky;
+      top: 90px;
+    }
+    .legal-toc-label {
+      font-family: var(--font-head);
+      font-size: 0.65rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 0.75rem;
+    }
+    .legal-toc ol { list-style: none; }
+    .legal-toc li { margin-bottom: 2px; }
+    .legal-toc a {
+      font-size: 0.8125rem;
+      color: var(--muted);
+      display: block;
+      padding: 4px 0 4px 10px;
+      border-left: 2px solid var(--border);
+      transition: color var(--ease), border-color var(--ease);
+      line-height: 1.4;
+    }
+    .legal-toc a:hover {
+      color: var(--teal);
+      border-left-color: var(--teal);
+    }
+
+    .legal-content { min-width: 0; }
+    .legal-lead {
+      background: var(--surface);
+      border-left: 3px solid var(--teal);
+      border-radius: 0 var(--radius) var(--radius) 0;
+      padding: 1.125rem 1.375rem;
+      margin-bottom: 2.5rem;
+    }
+    .legal-lead p {
+      margin: 0;
+      font-size: 0.9375rem;
+      color: var(--text);
+      max-width: none;
+    }
+
+    .ls { margin-bottom: 3rem; }
+    .ls h2 {
+      font-family: var(--font-head);
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--teal);
+      margin-bottom: 1rem;
+      padding-bottom: 0.625rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .ls h3 {
+      font-size: 0.9375rem;
+      font-weight: 700;
+      color: var(--dark);
+      margin: 1.25rem 0 0.5rem;
+      font-family: var(--font-head);
+    }
+    .ls p {
+      font-size: 0.9375rem;
+      color: var(--text);
+      margin-bottom: 0.75rem;
+      max-width: none;
+      line-height: 1.7;
+    }
+    .ls ul, .ls ol {
+      padding-left: 1.25rem;
+      margin-bottom: 0.75rem;
+    }
+    .ls li {
+      font-size: 0.9375rem;
+      color: var(--text);
+      margin-bottom: 0.4rem;
+      line-height: 1.65;
+    }
+    .ls a { color: var(--teal); text-decoration: underline; }
+    .ls a:hover { color: var(--teal-dark); }
+    .ls strong { color: var(--dark); }
+
+    .rights-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 0.875rem;
+      margin-top: 1rem;
+    }
+    .rights-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 1rem 1.125rem;
+    }
+    .rights-card strong {
+      display: block;
+      font-family: var(--font-head);
+      font-size: 0.85rem;
+      color: var(--dark);
+      margin-bottom: 0.25rem;
+    }
+    .rights-card p {
+      font-size: 0.8125rem;
+      color: var(--muted);
+      margin: 0;
+    }
+
+    .lang-note {
+      background: var(--teal-light);
+      border-radius: var(--radius-lg);
+      padding: 1rem 1.25rem;
+      margin-bottom: 2rem;
+      font-size: 0.875rem;
+      color: var(--teal-dark);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <div class="container nav-wrap">
+      <a href="index.html" class="logo" aria-label="UP Cocreate home">
+        <span class="logo-up">UP</span><span class="logo-co"> Co</span><span class="logo-create">create</span>
+      </a>
+      <nav aria-label="Main navigation">
+        <ul class="nav">
+          <li><a href="index.html#services" class="nav-link"><span data-lang="en">Services</span><span data-lang="es">Servicios</span></a></li>
+          <li><a href="about.html" class="nav-link"><span data-lang="en">About</span><span data-lang="es">Nosotros</span></a></li>
+          <li><a href="contact.html" class="nav-link"><span data-lang="en">Contact</span><span data-lang="es">Contacto</span></a></li>
+        </ul>
+      </nav>
+      <div class="nav-right">
+        <button class="lang-toggle desktop" id="langToggle" aria-label="Toggle language">ES</button>
+        <a href="contact.html" class="btn btn-teal btn-sm"><span data-lang="en">Let's talk</span><span data-lang="es">Hablemos</span></a>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <ul>
+      <li><a href="index.html#services"><span data-lang="en">Services</span><span data-lang="es">Servicios</span></a></li>
+      <li><a href="about.html"><span data-lang="en">About</span><span data-lang="es">Nosotros</span></a></li>
+      <li><a href="contact.html"><span data-lang="en">Contact</span><span data-lang="es">Contacto</span></a></li>
+    </ul>
+    <div class="mobile-lang-row">
+      <button class="lang-toggle" id="langToggleMobile" aria-label="Toggle language">ES</button>
+    </div>
+  </div>
+
+  <main>
+
+    <!-- HERO -->
+    <div class="legal-hero">
+      <div class="container">
+        <a href="index.html" class="back-link">
+          <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M10 12L6 8l4-4"/></svg>
+          <span data-lang="en">Back to home</span><span data-lang="es">Volver al inicio</span>
+        </a>
+        <p class="eyebrow"><span data-lang="en">Legal</span><span data-lang="es">Legal</span></p>
+        <h1><span data-lang="en">Privacy Policy</span><span data-lang="es">Política de Privacidad</span></h1>
+        <p class="meta"><span data-lang="en">Effective date: June 14, 2026 · Last updated: June 14, 2026</span><span data-lang="es">Fecha de vigencia: 14 de junio de 2026 · Última actualización: 14 de junio de 2026</span></p>
+      </div>
+    </div>
+
+    <!-- BODY -->
+    <div class="legal-body">
+      <div class="container">
+
+        <div class="lang-note">
+          <strong>Language note:</strong> This Privacy Policy is provided in English. A Spanish summary is available on request at <a href="mailto:hello@upcocreate.com">hello@upcocreate.com</a>. In the event of any conflict, the English version prevails.
+        </div>
+
+        <div class="legal-layout">
+
+          <!-- TOC -->
+          <aside class="legal-toc" aria-label="Table of contents">
+            <p class="legal-toc-label">Contents</p>
+            <ol>
+              <li><a href="#who-we-are">1. Who We Are</a></li>
+              <li><a href="#data-we-collect">2. Data We Collect</a></li>
+              <li><a href="#how-we-use">3. How We Use Data</a></li>
+              <li><a href="#legal-basis">4. Legal Basis (GDPR)</a></li>
+              <li><a href="#sharing">5. Data Sharing</a></li>
+              <li><a href="#international">6. International Transfers</a></li>
+              <li><a href="#retention">7. Retention</a></li>
+              <li><a href="#your-rights">8. Your Rights</a></li>
+              <li><a href="#california">9. California (CCPA)</a></li>
+              <li><a href="#children">10. Children's Privacy</a></li>
+              <li><a href="#cookies">11. Cookies</a></li>
+              <li><a href="#security">12. Security</a></li>
+              <li><a href="#changes">13. Changes</a></li>
+              <li><a href="#contact">14. Contact Us</a></li>
+            </ol>
+          </aside>
+
+          <!-- CONTENT -->
+          <div class="legal-content">
+
+            <div class="legal-lead">
+              <p>This Privacy Policy explains how <strong>UP Cocreate LLC</strong> ("UP Cocreate," "we," "us," or "our") collects, uses, and shares information about you when you visit <strong>upcocreate.com</strong> or engage with our professional services (collectively, the "Services"). By using the Services, you agree to the practices described here.</p>
+            </div>
+
+            <!-- 1 -->
+            <section class="ls" id="who-we-are">
+              <h2>1. Who We Are</h2>
+              <p>UP Cocreate is a professional services firm specializing in AI automation, data analytics, branding, strategic communications, and digital marketing. We work primarily with organizations — including NGOs, international development bodies, enterprises, and social enterprises — across the United States and internationally.</p>
+              <p>
+                UP Cocreate<br>
+                1550 Wilson Blvd, Suite 700 PMP 513<br>
+                Arlington, VA 22209<br>
+                United States<br>
+                Email: <a href="mailto:hello@upcocreate.com">hello@upcocreate.com</a><br>
+                Phone (US): <a href="tel:+19293564450">929-356-4450</a><br>
+                Phone (Costa Rica): <a href="tel:+50686600110">+(506) 8660-0110</a>
+              </p>
+              <p>For the purposes of the EU General Data Protection Regulation (GDPR) and the UK GDPR, UP Cocreate is the data controller of personal data collected through this website. For personal data processed in the context of our client engagements, the applicable role (controller or processor) is defined by the relevant client contract.</p>
+            </section>
+
+            <!-- 2 -->
+            <section class="ls" id="data-we-collect">
+              <h2>2. Data We Collect</h2>
+
+              <h3>2.1 Information You Provide</h3>
+              <ul>
+                <li><strong>Contact forms:</strong> Name, organization, job title, email address, phone number, and the content of your message when you submit an inquiry.</li>
+                <li><strong>Email correspondence:</strong> Any personal data contained in emails you send us.</li>
+                <li><strong>Client onboarding:</strong> Business contact information, organizational details, and other information necessary to establish a professional engagement.</li>
+              </ul>
+
+              <h3>2.2 Information Collected Automatically</h3>
+              <ul>
+                <li><strong>Usage data:</strong> Pages visited, time on page, clicks, referring URL, and navigation path.</li>
+                <li><strong>Device &amp; browser data:</strong> Browser type and version, operating system, screen resolution, and language settings.</li>
+                <li><strong>IP address:</strong> Used for approximate geolocation (country/region), security, and analytics.</li>
+                <li><strong>Cookies &amp; tracking technologies:</strong> See Section 11 and our <a href="cookies.html">Cookie Policy</a>.</li>
+              </ul>
+
+              <h3>2.3 Information from Third Parties</h3>
+              <ul>
+                <li><strong>GoHighLevel (GHL):</strong> Our CRM and contact management platform. When you submit a form, your data is stored and managed in GHL under their <a href="https://www.gohighlevel.com/privacy-policy" target="_blank" rel="noopener noreferrer">Privacy Policy</a>.</li>
+                <li><strong>Referrals:</strong> If a third party refers you to us, we may receive your name and contact information from that party.</li>
+              </ul>
+            </section>
+
+            <!-- 3 -->
+            <section class="ls" id="how-we-use">
+              <h2>3. How We Use Your Data</h2>
+              <ul>
+                <li><strong>Respond to inquiries:</strong> To follow up on contact form submissions and email inquiries.</li>
+                <li><strong>Deliver professional services:</strong> To communicate with you and manage our consulting engagement with your organization.</li>
+                <li><strong>Marketing communications:</strong> To send updates, thought leadership, and service announcements. You can opt out at any time.</li>
+                <li><strong>Analytics &amp; site improvement:</strong> To understand how visitors use our website and to improve user experience.</li>
+                <li><strong>Security &amp; fraud prevention:</strong> To detect and prevent unauthorized access and abuse.</li>
+                <li><strong>Legal compliance:</strong> To comply with applicable laws, regulations, and valid legal process.</li>
+              </ul>
+              <p>We do not sell your personal data. We do not use it for automated decision-making that produces legal effects on you.</p>
+            </section>
+
+            <!-- 4 -->
+            <section class="ls" id="legal-basis">
+              <h2>4. Legal Basis for Processing (GDPR)</h2>
+              <p>If you are located in the European Economic Area (EEA), United Kingdom, or Switzerland, we rely on the following legal bases under Article 6 GDPR:</p>
+              <ul>
+                <li><strong>Legitimate interests (Art. 6(1)(f)):</strong> Responding to business inquiries, maintaining client relationships, website analytics, and security. Our legitimate interests do not override your fundamental rights.</li>
+                <li><strong>Contractual necessity (Art. 6(1)(b)):</strong> Processing necessary to deliver professional services you or your organization have engaged us to provide.</li>
+                <li><strong>Consent (Art. 6(1)(a)):</strong> Marketing communications and non-essential cookies. You may withdraw consent at any time without affecting the lawfulness of prior processing.</li>
+                <li><strong>Legal obligation (Art. 6(1)(c)):</strong> Where processing is required to comply with applicable law.</li>
+              </ul>
+            </section>
+
+            <!-- 5 -->
+            <section class="ls" id="sharing">
+              <h2>5. Data Sharing</h2>
+              <p>We share personal data only as necessary:</p>
+              <ul>
+                <li><strong>Service providers:</strong> Third-party vendors who help us operate our business (CRM, hosting, analytics, email delivery). They are contractually bound to process data only for permitted purposes.</li>
+                <li><strong>GoHighLevel:</strong> Processes contact and inquiry data on our behalf as a service provider.</li>
+                <li><strong>Professional advisors:</strong> Lawyers, accountants, and auditors, subject to confidentiality obligations.</li>
+                <li><strong>Legal requirements:</strong> Where required by law, regulation, court order, or to protect our rights, safety, or property.</li>
+                <li><strong>Business transfers:</strong> In connection with a merger, acquisition, or asset sale, with prior notice where legally required.</li>
+              </ul>
+              <p>We do <strong>not</strong> sell, rent, or trade personal data to third parties for their own marketing purposes.</p>
+            </section>
+
+            <!-- 6 -->
+            <section class="ls" id="international">
+              <h2>6. International Data Transfers</h2>
+              <p>We are based in the United States and have operations in Costa Rica. If you are located outside the US, your personal data may be transferred to and processed in the United States.</p>
+              <p>For transfers from the EEA or UK to the US, we rely on:</p>
+              <ul>
+                <li>Standard Contractual Clauses (SCCs) approved by the European Commission; and/or</li>
+                <li>The EU-U.S. Data Privacy Framework and/or UK Extension, where our sub-processors are certified.</li>
+              </ul>
+              <p>You may request a copy of the applicable transfer safeguards by contacting us at <a href="mailto:hello@upcocreate.com">hello@upcocreate.com</a>.</p>
+            </section>
+
+            <!-- 7 -->
+            <section class="ls" id="retention">
+              <h2>7. Data Retention</h2>
+              <ul>
+                <li><strong>Contact inquiries:</strong> Retained for up to 24 months after last contact, or until you request deletion.</li>
+                <li><strong>Client engagement data:</strong> For the duration of the engagement plus up to 7 years thereafter, as required for legal and financial record-keeping obligations.</li>
+                <li><strong>Server and access logs:</strong> Up to 90 days, then deleted or anonymized.</li>
+                <li><strong>Marketing opt-in lists:</strong> Until you unsubscribe or request removal.</li>
+              </ul>
+              <p>When retention periods expire, data is securely deleted or irreversibly anonymized.</p>
+            </section>
+
+            <!-- 8 -->
+            <section class="ls" id="your-rights">
+              <h2>8. Your Rights</h2>
+              <p>Depending on your location, you have some or all of the following rights:</p>
+              <div class="rights-grid">
+                <div class="rights-card">
+                  <strong>Access</strong>
+                  <p>Request a copy of personal data we hold about you.</p>
+                </div>
+                <div class="rights-card">
+                  <strong>Rectification</strong>
+                  <p>Correct inaccurate or incomplete data.</p>
+                </div>
+                <div class="rights-card">
+                  <strong>Erasure</strong>
+                  <p>Request deletion of your data in certain circumstances.</p>
+                </div>
+                <div class="rights-card">
+                  <strong>Restriction</strong>
+                  <p>Ask us to restrict processing while a complaint is resolved.</p>
+                </div>
+                <div class="rights-card">
+                  <strong>Portability</strong>
+                  <p>Receive your data in a structured, machine-readable format.</p>
+                </div>
+                <div class="rights-card">
+                  <strong>Objection</strong>
+                  <p>Object to processing based on legitimate interests or for direct marketing.</p>
+                </div>
+                <div class="rights-card">
+                  <strong>Withdraw Consent</strong>
+                  <p>Withdraw consent where processing is consent-based.</p>
+                </div>
+                <div class="rights-card">
+                  <strong>Lodge a Complaint</strong>
+                  <p>Complain to your local data protection authority.</p>
+                </div>
+              </div>
+              <p style="margin-top:1rem;">To exercise any right, email <a href="mailto:hello@upcocreate.com">hello@upcocreate.com</a> with "Privacy Request" in the subject. We respond within 30 days and may verify your identity first.</p>
+              <p>To unsubscribe from marketing emails, click "Unsubscribe" in any email or contact us directly.</p>
+            </section>
+
+            <!-- 9 -->
+            <section class="ls" id="california">
+              <h2>9. California Residents — CCPA / CPRA</h2>
+              <p>California residents have additional rights under the California Consumer Privacy Act (CCPA) as amended by the California Privacy Rights Act (CPRA).</p>
+
+              <h3>Categories of personal information collected</h3>
+              <ul>
+                <li>Identifiers (name, email, phone, IP address)</li>
+                <li>Professional or employment-related information (job title, organization)</li>
+                <li>Internet or other network activity (website browsing behavior)</li>
+                <li>Geolocation data (approximate, from IP address)</li>
+              </ul>
+
+              <h3>Your CCPA rights</h3>
+              <ul>
+                <li><strong>Right to Know:</strong> Details about data collected, used, and disclosed.</li>
+                <li><strong>Right to Delete:</strong> Request deletion, subject to exceptions.</li>
+                <li><strong>Right to Correct:</strong> Request correction of inaccurate data.</li>
+                <li><strong>Right to Opt-Out of Sale or Sharing:</strong> We do not sell or share personal information for behavioral advertising.</li>
+                <li><strong>Right to Non-Discrimination:</strong> We will not discriminate for exercising CCPA rights.</li>
+              </ul>
+              <p>Submit requests to <a href="mailto:hello@upcocreate.com">hello@upcocreate.com</a> with "CCPA Request" in the subject line. We have not sold or shared personal information in the preceding 12 months.</p>
+            </section>
+
+            <!-- 10 -->
+            <section class="ls" id="children">
+              <h2>10. Children's Privacy</h2>
+              <p>Our website and services are directed at professionals and organizations, not children. We do not knowingly collect personal data from children under 13. If you believe a child has submitted data to us, please contact us at <a href="mailto:hello@upcocreate.com">hello@upcocreate.com</a> and we will promptly delete it.</p>
+            </section>
+
+            <!-- 11 -->
+            <section class="ls" id="cookies">
+              <h2>11. Cookies &amp; Tracking Technologies</h2>
+              <p>We use cookies and similar technologies on our website. For full details, please see our <a href="cookies.html">Cookie Policy</a>. In summary:</p>
+              <ul>
+                <li><strong>Strictly necessary:</strong> Site functionality. No consent required.</li>
+                <li><strong>Analytics:</strong> Aggregate usage data to improve the site. Requires consent where applicable.</li>
+                <li><strong>Marketing / CRM:</strong> GoHighLevel tracking to connect form submissions to web visits. Requires consent where applicable.</li>
+              </ul>
+            </section>
+
+            <!-- 12 -->
+            <section class="ls" id="security">
+              <h2>12. Security</h2>
+              <p>We implement industry-standard technical and organizational security measures including:</p>
+              <ul>
+                <li>TLS/HTTPS encryption for all data in transit</li>
+                <li>Access controls restricting data to authorized personnel</li>
+                <li>Regular reviews of our systems and service providers</li>
+              </ul>
+              <p>No transmission or storage method is 100% secure. If you become aware of a security issue involving your data, please notify us immediately at <a href="mailto:hello@upcocreate.com">hello@upcocreate.com</a>. In the event of a breach likely to affect your rights and freedoms, we will notify the relevant supervisory authority within 72 hours and affected individuals without undue delay, as required by law.</p>
+            </section>
+
+            <!-- 13 -->
+            <section class="ls" id="changes">
+              <h2>13. Changes to This Policy</h2>
+              <p>We may update this Privacy Policy from time to time. We will update the "Last updated" date and, for material changes, notify you by email where we have your contact details. Continued use of the Services after changes constitutes acceptance of the updated policy.</p>
+            </section>
+
+            <!-- 14 -->
+            <section class="ls" id="contact">
+              <h2>14. Contact Us</h2>
+              <p>For questions, requests, or concerns about this policy or your personal data:</p>
+              <p>
+                <strong>UP Cocreate — Privacy</strong><br>
+                1550 Wilson Blvd, Suite 700 PMP 513<br>
+                Arlington, VA 22209 · USA<br>
+                <a href="mailto:hello@upcocreate.com">hello@upcocreate.com</a>
+              </p>
+              <p>If you are in the EEA or UK and are not satisfied with our response, you have the right to complain to your local data protection authority. EEA supervisory authorities: <a href="https://edpb.europa.eu/about-edpb/about-edpb/members_en" target="_blank" rel="noopener noreferrer">edpb.europa.eu</a>. UK: <a href="https://ico.org.uk" target="_blank" rel="noopener noreferrer">ico.org.uk</a>.</p>
+            </section>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="logo footer-logo" aria-label="UP Cocreate home">
+            <span class="logo-up">UP</span><span class="logo-co"> Co</span><span class="logo-create">create</span>
+          </a>
+          <p><span data-lang="en">Strategy, design, and growth — built together.</span><span data-lang="es">Estrategia, diseño y crecimiento — construidos juntos.</span></p>
+          <p class="footer-address">Arlington, VA USA</p>
+        </div>
+        <div class="footer-col">
+          <h4><span data-lang="en">Services</span><span data-lang="es">Servicios</span></h4>
+          <ul>
+            <li><a href="services/ai-automation.html"><span data-lang="en">AI Automation</span><span data-lang="es">Automatización con IA</span></a></li>
+            <li><a href="services/data-analytics.html"><span data-lang="en">Data Analytics</span><span data-lang="es">Analítica de Datos</span></a></li>
+            <li><a href="services/branding.html"><span data-lang="en">Branding</span><span data-lang="es">Marca y Branding</span></a></li>
+            <li><a href="services/strategic-communications.html"><span data-lang="en">Strategic Communications</span><span data-lang="es">Comunicaciones Estratégicas</span></a></li>
+            <li><a href="services/digital-marketing.html"><span data-lang="en">Digital Marketing</span><span data-lang="es">Marketing Digital</span></a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4><span data-lang="en">Company</span><span data-lang="es">Empresa</span></h4>
+          <ul>
+            <li><a href="about.html"><span data-lang="en">About</span><span data-lang="es">Nosotros</span></a></li>
+            <li><a href="about.html#founders"><span data-lang="en">Founders</span><span data-lang="es">Fundadores</span></a></li>
+            <li><a href="contact.html"><span data-lang="en">Contact</span><span data-lang="es">Contacto</span></a></li>
+            <li><a href="privacy.html"><span data-lang="en">Privacy Policy</span><span data-lang="es">Privacidad</span></a></li>
+            <li><a href="terms.html"><span data-lang="en">Terms of Service</span><span data-lang="es">Términos</span></a></li>
+            <li><a href="cookies.html"><span data-lang="en">Cookie Policy</span><span data-lang="es">Cookies</span></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025–2026 UP Cocreate. <span data-lang="en">All rights reserved.</span><span data-lang="es">Todos los derechos reservados.</span></p>
+        <p><a href="mailto:hello@upcocreate.com">hello@upcocreate.com</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
