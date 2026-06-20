@@ -37,7 +37,7 @@ function setLang(lang) {
   }
   // Update all toggle button labels
   document.querySelectorAll('#langToggle, #langToggleMobile').forEach(btn => {
-    btn.textContent = lang === 'es' ? 'EN' : 'ES';
+    btn.textContent = lang === 'es' ? 'EN' : 'Español';
     btn.setAttribute('aria-label', lang === 'es' ? 'Switch to English' : 'Cambiar a español');
   });
   localStorage.setItem('upcc-lang', lang);
